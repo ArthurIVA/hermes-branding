@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermes Agent — Home Lab AI Assistant</title>
+<meta name="description" content="Hermes Agent is a self-hosted personal AI assistant that runs on the owner's own hardware. Home page for the Google OAuth consent screen.">
+<link rel="icon" href="logo.png">
+<style>
+:root{--bg:#0f1420;--fg:#e8edf5;--mut:#9fb0c8;--acc:#60c8ff;--card:#161c2a;--line:#33405a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{display:flex;align-items:center;gap:14px;padding:20px 24px;border-bottom:1px solid var(--line)}
+header img{width:56px;height:56px;border-radius:12px}
+h1{font-size:20px;margin:0}
+main{max-width:780px;margin:0 auto;padding:32px 24px 64px}
+h2{font-size:17px;margin:32px 0 8px;color:var(--acc)}
+p{margin:0 0 12px;color:var(--fg)}
+.mut{color:var(--mut)}
+nav a{display:inline-block;margin-right:16px;color:var(--acc);text-decoration:none}
+nav a:hover{text-decoration:underline}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin-top:24px}
+ul{margin:8px 0 0;padding-left:20px}
+footer{max-width:780px;margin:0 auto;padding:24px;color:var(--mut);font-size:14px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header>
+  <img src="logo.png" alt="Hermes Agent logo">
+  <div><h1>Hermes Agent</h1><div class="mut">Self-hosted personal AI assistant</div></div>
+</header>
+
+<main>
+<p><strong>Hermes Agent</strong> is a personal AI assistant that the owner runs on his own
+hardware at home. This page exists as the required application home page for the Google
+OAuth consent screen that the assistant uses to read and send the owner's own Gmail,
+and to read the owner's own Calendar, Drive, Contacts, Sheets and Docs.</p>
+
+<div class="card">
+<h2 style="margin-top:0">What this application does</h2>
+<ul>
+<li>Runs locally on the owner's own machines — no third-party AI service receives his data by default.</li>
+<li>Reads and sends the <em>owner's own</em> Gmail, and reads his Calendar, Drive, Contacts, Sheets and Docs, so it can summarize his inbox, draft replies he approves, report on his schedule, and update his own spreadsheets.</li>
+<li>Performs scheduled jobs for the owner only — for example a morning email summary and recurring work reports.</li>
+</ul>
+<p class="mut" style="margin-top:14px;margin-bottom:0">This application is not published, marketed or distributed. It serves one Google account: its owner's. No other user is asked to sign in.</p>
+</div>
+
+<h2>Scopes requested and why</h2>
+<ul class="mut">
+<li><strong>Gmail read / send / modify</strong> — inbox triage, summaries, and sending the reports and replies the owner asks for.</li>
+<li><strong>Calendar</strong> — daily schedule awareness and meeting prep.</li>
+<li><strong>Drive / Docs / Sheets</strong> — reading and updating the owner's own documents and spreadsheets (including a shared household budget sheet).</li>
+<li><strong>Contacts (read only)</strong> — resolving names for email recipients.</li>
+</ul>
+
+<h2>Where to look next</h2>
+<nav>
+  <a href="privacy.html">Privacy policy</a>
+  <a href="terms.html">Terms of service</a>
+</nav>
+
+<p class="mut" style="margin-top:28px">Questions about this application: contact the owner, Arthur Wisner (IV-A), through his usual channels.</p>
+</main>
+
+<footer>Hermes Agent — self-hosted personal AI assistant. Home page for Google OAuth verification branding requirements.</footer>
+</body>
+</html>
